@@ -13,12 +13,12 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 const ld EPS = 1e-9;
 
-int main(){
+    int main(){
     ios::sync_with_stdio(0);  //decouples c and c++ streams for speed since scanf/printf is faster than cin/cout
     cin.tie(0);               //decouples cin and cout streams for speed
     //int n;
     //cin >> n;
-    //for(int i = 0; i < n; i++){    
+    //for(int i = 0; i < n; i++){ 
     //}
     int n, k;
     cin >> n >> k;
@@ -26,6 +26,7 @@ int main(){
     int num;
     while(p < k && cin >> num && num > 0){
         p++;
+
     }
     int nnum = 0;
     while(p < n && cin >> nnum && nnum == num && nnum > 0)

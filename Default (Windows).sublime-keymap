@@ -1,0 +1,19 @@
+[
+	//auto_save script command
+	{ "keys": ["ctrl+shift+,"], "command": "auto_save" },
+
+	//1 column on left with one file
+	//1 column on right with 2 rows
+	{
+		"keys": ["alt+shift+6"],
+		"command": "set_layout",
+		"args":
+		{								
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 0.5, 1.0],
+			"cells":
+			[[0, 0, 1, 2], [1, 0, 2, 1], [1, 1, 2, 2]]
+		}
+	}
+
+]
