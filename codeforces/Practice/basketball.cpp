@@ -3,7 +3,7 @@
 using namespace std;      //using namespace prevents need for std::cin or others
 
 #define ar array
-#define ll long long
+#define ll long long 
 #define ld long double
 #define sz(x) ((int)x.size())
 #define all(a) (a).begin(), (a).end()
@@ -32,7 +32,7 @@ int main(){
         }
         else if(map['B'] >= 11 && map['A'] < 10){
             cout << "B";
-            break;
+            break;  
         }
         else if(map['A'] >= 11 && map['B'] < 10){
             cout << "A";
