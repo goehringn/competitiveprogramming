@@ -1,4 +1,4 @@
-//g++ -O2 -std=c++17 -Wall -Wl,--stack,26843546 template.cpp -o name && name
+//g++ -O2 -std=c++17 -Wall -Wl,--stack,26843546 team.cpp -o name && name
 #include<bits/stdc++.h>   //c++ stl 
 using namespace std;      //using namespace prevents need for std::cin or others
 
@@ -18,21 +18,14 @@ int main(){
     cin.tie(0);               //decouples cin and cout streams for speed
     int n;
     cin >> n;
+    int count = 0;
     for(int i = 0; i < n; i++){
-        string s;
-        cin >> s;
-        if(sz(s) > 10)
-        {
-            char b = s.at(0);
-            int m = sz(s) - 2;
-            char e = s.at(sz(s)-1);
-            string sol;
-            sol.push_back(b);
-            sol.append(to_string(m));
-            sol.push_back(e);
-            cout << sol << "\n";
-        }
-        else
-            cout << s << "\n";
+        int a, b, c;
+        cin >> a;
+        cin >> b; 
+        cin >> c;
+        if(a+b+c >= 2)
+            count++;
     }
+    cout << count;
 }

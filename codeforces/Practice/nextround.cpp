@@ -16,23 +16,19 @@ const ld EPS = 1e-9;
 int main(){
     ios::sync_with_stdio(0);  //decouples c and c++ streams for speed since scanf/printf is faster than cin/cout
     cin.tie(0);               //decouples cin and cout streams for speed
-    int n;
-    cin >> n;
-    for(int i = 0; i < n; i++){
-        string s;
-        cin >> s;
-        if(sz(s) > 10)
-        {
-            char b = s.at(0);
-            int m = sz(s) - 2;
-            char e = s.at(sz(s)-1);
-            string sol;
-            sol.push_back(b);
-            sol.append(to_string(m));
-            sol.push_back(e);
-            cout << sol << "\n";
-        }
-        else
-            cout << s << "\n";
+    //int n;
+    //cin >> n;
+    //for(int i = 0; i < n; i++){    
+    //}
+    int n, k;
+    cin >> n >> k;
+    int p = 0;
+    int num;
+    while(p < k && cin >> num && num > 0){
+        p++;
     }
+    int nnum = 0;
+    while(p < n && cin >> nnum && nnum == num && nnum > 0)
+        p++;
+    cout << p;
 }
