@@ -8,7 +8,10 @@ using namespace std;      //using namespace prevents need for std::cin or others
 #define sz(x) ((int)x.size())
 #define all(a) (a).begin(), (a).end()
 
-const int MAX_N = 1e5 + 5;
+//INT_MAX
+//INT_MIN
+//LLONG_MAX
+//LLONG_MIN
 const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 const ld EPS = 1e-9;

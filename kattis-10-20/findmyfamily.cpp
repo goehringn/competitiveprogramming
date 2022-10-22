@@ -7,6 +7,7 @@ using namespace std;      //using namespace prevents need for std::cin or others
 #define ld long double
 #define sz(x) ((int)x.size())
 #define all(a) (a).begin(), (a).end()
+
 //INT_MAX
 //INT_MIN
 //LLONG_MAX
