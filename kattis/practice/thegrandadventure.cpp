@@ -49,11 +49,54 @@ const ld EPS = 1e-9;
 int main(){
     ios::sync_with_stdio(0);  //decouples c and c++ streams for speed since scanf/printf is faster than cin/cout
     cin.tie(0);               //decouples cin and cout streams for speed
-    string n;
+    int n;
     cin >> n;
-    if(n.substr(0,3) == "555")
-        cout << 1;
-    else
-        cout << 0;
+    for(int i = 0; i < n; i++){
+        string s; cin >> s;
+        stack<char> stack;
+        bool a = true;
+        for(size_t i = 0; i < s.length(); i++){
+            if(stack.empty() && (s.at(i) == 't' || s.at(i) == 'j' || s.at(i) == 'b')){
+                cout << "NO"<< "\n";
+                a = false;
+                break;
+            }
+            else if(s.at(i) == '$' || s.at(i) == '|' || s.at(i) == '*')
+                stack.push(s.at(i));
+            else if(s.at(i) == 'j'){
+                if(stack.top() == '*')
+                    stack.pop();
+                else{
+                    cout << "NO"<< "\n";
+                    a=false;
+                    break;
+                }
+            }
+            else if(s.at(i) == 'b'){
+                if(stack.top() == '$')
+                    stack.pop();
+                else{
+                    cout << "NO"<< "\n";
+                    a=false;
+                    break;
+                }
+            }
+            else if(s.at(i) == 't'){
+                if(stack.top() == '|')
+                    stack.pop();
+                else{
+                    cout << "NO" << "\n";
+                    a=false;
+                    break;
+                }
+            }
+        }
+        if(a){
+            if(stack.empty())
+                cout << "YES" << "\n";
+            else
+                cout << "NO" << "\n";
+        }
+    }
 }
 

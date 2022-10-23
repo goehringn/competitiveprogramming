@@ -51,9 +51,6 @@ int main(){
     cin.tie(0);               //decouples cin and cout streams for speed
     string n;
     cin >> n;
-    if(n.substr(0,3) == "555")
-        cout << 1;
-    else
-        cout << 0;
+    cout << n << " " << n << " " << n;
 }
 

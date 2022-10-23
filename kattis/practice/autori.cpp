@@ -49,11 +49,13 @@ const ld EPS = 1e-9;
 int main(){
     ios::sync_with_stdio(0);  //decouples c and c++ streams for speed since scanf/printf is faster than cin/cout
     cin.tie(0);               //decouples cin and cout streams for speed
-    string n;
+    string n, t;
     cin >> n;
-    if(n.substr(0,3) == "555")
-        cout << 1;
-    else
-        cout << 0;
+    t.pub(n.at(0));
+    for(size_t i = 0; i < n.size(); i++){
+        if(n.at(i) == '-')
+            t.pub(n.at(i+1));
+    }
+    cout << t;
 }
 
