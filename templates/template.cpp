@@ -2,18 +2,46 @@
 #include<bits/stdc++.h>   //c++ stl 
 using namespace std;      //using namespace prevents need for std::cin or others
 
-#define ar array
-#define ll long long
-#define ld long double
-#define sz(x) ((int)x.size())
-#define all(a) (a).begin(), (a).end()
-
 //INT_MAX
 //INT_MIN
 //LLONG_MAX
 //LLONG_MIN
 //DBL_MAX
 //DBL_MIN
+
+#define ar array
+#define ll long long
+#define ld long double
+#define sz(x) ((int)x.size())
+#define all(a) (a).begin(), (a).end()
+#define F first
+#define S second
+#define vec vector
+#define pb push_back
+#define pll pair<ll, ll>
+#define pdd pair<ld, ld>
+#define pii pair<int, int>
+#define lsz(m) (ll)m.size()
+#define isz(m) (int)m.size()
+#define pnn pair<Node*, Node*>
+#define rall(m) m.rbegin(), m.rend()
+#define uid uniform_int_distribution
+#define timeStamp() std::chrono::steady_clock::now()
+#define unify(m) sort(all(m)); m.erase(unique(all(m)), m.end());
+#define duration_micro(a) chrono::duration_cast<chrono::microseconds>(a).count()
+#define duration_milli(a) chrono::duration_cast<chrono::milliseconds>(a).count()
+#define vi vec<int>
+#define vl vec<ll>
+#define vvi vec<vec<int>>
+#define vvvi vec<vec<vec<int>>>
+#define vvl vec<vec<ll>>
+#define vpi vec<pii>
+#define vpl vec<pll>
+#define vs vec<string>
+#define vvs vec<vec<string>>
+
+const int dx[] = { -1, 0, 1, 0, -1, 1, 1, -1};
+const int dy[] = {0, 1, 0, -1, 1, 1, -1, -1};
 const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 const ld EPS = 1e-9;
@@ -27,3 +55,4 @@ int main(){
         cout << n;
     }
 }
+
