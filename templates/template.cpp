@@ -12,6 +12,8 @@ using namespace std;      //using namespace prevents need for std::cin or others
 //INT_MIN
 //LLONG_MAX
 //LLONG_MIN
+//DBL_MAX
+//DBL_MIN
 const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 const ld EPS = 1e-9;
