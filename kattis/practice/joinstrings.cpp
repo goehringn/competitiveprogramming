@@ -51,17 +51,20 @@ int main(){
     cin.tie(0);               //decouples cin and cout streams for speed
     int n;
     cin >> n;
-    string s[n];
+    vector<string> s;
     string t;
     for(int i = 0; i < n; i++){
         cin >> t;
-        s[i] = t;
+        s.push_back(t);
     }
     int one, two;
     int lindex = 0;
-    while(cin >> one){
-        cin >> two;
-        s[one-1] = s[one-1].append(s[two-1]);
+    for(int i = 0; i < n-1; i++){
+        cin >> one; cin >> two;
+        if(one == 0 && two == 0)
+            break;
+        s[one-1].append(s[two-1]);
+        s[two-1] = "";
         lindex = one-1;
     }
     cout << s[lindex];
