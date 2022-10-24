@@ -1,6 +1,6 @@
 {
     "shell_cmd": "cmd.exe",
-    "shell_cmd": "start cmd.exe /k g++ -O2 -std=c++17 -Wall -Wl,--stack,26843546 \"$file\" -o \"$file_base_name\"",
+    "shell_cmd": "start cmd.exe /k g++ -O2 -std=c++17 -Wall -Wl,--stack,26843546 \"$file\" -o solution",
     "shell":true,
     "working_dir":"$file_path",
     "selector":"source.cpp"
